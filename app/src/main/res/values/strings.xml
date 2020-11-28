@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QReader</string>
+    <string name="theme">QRコード募集中…</string>
 </resources>
