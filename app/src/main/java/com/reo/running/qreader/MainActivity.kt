@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -13,9 +14,11 @@ import com.google.zxing.ResultPoint
 import com.journeyapps.barcodescanner.BarcodeCallback
 import com.journeyapps.barcodescanner.BarcodeResult
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_title.*
 
 class MainActivity : AppCompatActivity() {
 
+    val flg = true
     //認可定数かな
     companion object {
     const val REQUEST_CAMERA_PERMISSION : Int = 1
@@ -71,14 +74,16 @@ class MainActivity : AppCompatActivity() {
                 if (result != null) {
                     onPause()
                     val uri = Uri.parse("$result")
+                    //　TODO URLに飛ばすかどうかのダイアログを表示したい！
+                    AlertDialog.Builder(applicationContext)
+                        .setTitle("$result,に飛びます")
+                        .setPositiveButton("OK"){ dialog, which ->  }
+                        .show()
                     val intent = Intent(Intent.ACTION_VIEW,uri)
                     startActivity(intent)
                 }
             }
-
             override fun possibleResultPoints(resultPoints: MutableList<ResultPoint>?) { }
         })
     }
-
-
 }
