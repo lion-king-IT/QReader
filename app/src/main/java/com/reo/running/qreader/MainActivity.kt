@@ -74,13 +74,15 @@ class MainActivity : AppCompatActivity() {
                 if (result != null) {
                     onPause()
                     val uri = Uri.parse("$result")
-                    //　TODO URLに飛ばすかどうかのダイアログを表示したい！
-                    AlertDialog.Builder(applicationContext)
+                    AlertDialog.Builder(this@MainActivity)
                         .setTitle("$result,に飛びます")
-                        .setPositiveButton("OK"){ dialog, which ->  }
+                        .setPositiveButton("OK"){ dialog, which ->
+                            val intent = Intent(Intent.ACTION_VIEW,uri)
+                            startActivity(intent)}
+                        .setCancelable(true)
                         .show()
-                    val intent = Intent(Intent.ACTION_VIEW,uri)
-                    startActivity(intent)
+
+
                 }
             }
             override fun possibleResultPoints(resultPoints: MutableList<ResultPoint>?) { }
