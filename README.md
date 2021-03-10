@@ -1,6 +1,5 @@
 # QReader
-https://play.google.com/store/apps/details?id=com.reo.running.qreader
-QRコードを読み取るシンプルなアプリです
+https://play.google.com/store/apps/details?id=com.reo.running.qreader  QRコードを読み取るシンプルなアプリです
 
 ## アプリの見た目/操作
 ![QRコード タイトルスクショ 縮小](https://user-images.githubusercontent.com/65647834/110713222-e79ac900-8244-11eb-9df1-9bf32e5e79e8.jpg)
@@ -12,5 +11,5 @@ QRコードを読み取るシンプルなアプリです
 ## 使用した技術
 ZXing Android Embedded
 
-　製作期間
+## 製作期間
 1か月
