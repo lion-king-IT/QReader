@@ -1,5 +1,5 @@
 # QReader
-https://play.google.com/store/apps/details?id=com.reo.running.qreader   QRコードを読み取るシンプルなアプリです
+https://play.google.com/store/apps/details?id=com.reo.running.qreader  QRコードを読み取るシンプルなアプリです
 
 ## アプリについて
 ![QRコード タイトルスクショ 縮小](https://user-images.githubusercontent.com/65647834/110713222-e79ac900-8244-11eb-9df1-9bf32e5e79e8.jpg)
