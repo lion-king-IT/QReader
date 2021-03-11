@@ -10,7 +10,8 @@ QRコードを読み取るシンプルなアプリです
 ※端末のカメラを使用しますので、パーミッションチェックが入ります
 
 ## 使用した技術
-ZXing Android Embedded
+ZXing Android Embedded  
+Git-flow
 
 ## 製作期間
 1か月
